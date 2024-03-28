@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "kan_bagisi_backend": {
+      "main": "src/kan_bagisi_backend/main.mo",
+      "type": "motoko"
+    },
+    "kan_bagisi_frontend": {
+      "dependencies": [
+        "kan_bagisi_backend"
+      ],
+      "source": [
+        "src/kan_bagisi_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
